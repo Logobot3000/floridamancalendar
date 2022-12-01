@@ -5,23 +5,67 @@
         <meta charset="utf-8">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         <link href="styles.css" rel="stylesheet">
-        <script src="sripts.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="container">
-            <h1 class="text-center pt-5">Florida Man Calendar</h1>
+            <h1 class="text-center pt-5 display-1">Florida Man Calendar</h1>
             <p class="text-center"><i>A calendar witholding a 'Florida Man' news event for every single day of the year.</i></p>
-            <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#january" aria-expanded="false" aria-controls="#january">
-                January
-            </button>
-            <div class="collapse" id="january">
-                <div class="card card-body">
-                    <ul>
-                        <li>
-                            <strong>January 1st: </strong>"Florida man bites canine and punches and spits on deputies. The suspect laughed and made bird noises as he paced back and forth, completely nude, except for the mud smeared all over his body."
-                        </li>
-                    </ul>
+            <div class="accordion" id="accordionOne">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            January
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionOne">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>
+                                    <strong>January 1st: </strong>"Florida man bites canine and punches and spits on deputies. The suspect laughed and made bird noises as he paced back and forth, completely nude, except for the mud smeared all over his body."
+                                </li>
+                                <li>
+                                    <strong>January 2nd: </strong>"A Florida man is behind bars after robbing a store disguised as Spiderman. Deputies said a man showed up unmasked to a Winn-Dixie Wine and Spirits Store in Casselberry, FL on Jan 2nd. He leaves - but then he returns - this time, he's wearing a Spiderman mask."
+                                </li>
+                                <li>
+                                    <strong>January 3rd: </strong>"A 74-year-old man is accused of chasing two people with a knife while riding an electric scooter, according to the Rockledge Police Department."
+                                </li>
+                                <li>
+                                    <strong>January 4th: </strong>"A man in Pasco County was arrested for domestic battery after admitting he hit his dad in the face with a slice of pizza because he was mad his dad helped birth him."
+                                </li>
+                                <li>
+                                    <strong>January 5th: </strong>"A Florida man woke up in the middle of the night to find another man sucking on his toes..."
+                                </li>
+                                <li>
+                                    <strong>January 6th: </strong>"Cholod was among a mob illegally massed on the Lower West Terrace and in an Archway and tunnel that leads into the Capitol Building."
+                                </li>
+                                <li>
+                                    <strong>January 7th: </strong>"A Florida man denied syringes were his after jail officials found them in his rectum during a strip search."
+                                </li>
+                                <li>
+                                    <strong>January 8th: </strong>"A Florida man was arrested Thursday with a homemade explosive near a rally held by the Oath Keepers."
+                                </li>
+                                <li>
+                                    <strong>January 9th: </strong>"The man seen carrying Speaker Nancy Pelosi's lectern during Wednesday's riot at the Capitol has been arrested."
+                                </li>
+                                <li>
+                                    <strong>January 10th: </strong>"Florida man purposely ran over Vietnam Veteran because 'he wanted to kill someone'."
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Accordion Item #2
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionOne">
+                    <div class="accordion-body">
+                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                </div>
                 </div>
             </div>
         </div>
